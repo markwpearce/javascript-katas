@@ -125,4 +125,10 @@ describe('toRoman (converts numbers to Roman Numerals)', function(){
   it('should convert (999) to CMXCIX', function(){
     assert.equal('CMXCIX', convert.toRoman((999)));
   });
+  it('should convert 65535 to L̅X̅V̅DXXXV', function(){
+    assert.equal('L̅X̅V̅DXXXV', convert.toRoman(65535));
+  });
+  it('should convert 4194304 to M̅V̅̅C̅X̅C̅MV̅CCCIV', function(){
+    assert.equal('M̅V̅̅C̅X̅C̅MV̅CCCIV', convert.toRoman(4194304));
+  });
 })
